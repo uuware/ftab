@@ -1,0 +1,530 @@
+<HTML>
+<HEAD>
+	<TITLE>FTab(Floating Tabs)</TITLE>
+	<link rel="stylesheet" href="ftab.css">
+	<link rel="stylesheet" href="ftab_green.css">
+	<script type="text/javascript" src="ftab.js"></script>
+</HEAD>
+<BODY>
+
+<table style="height:100%;width:100%;">
+<tr><td style="height:150px;width:50%;border:1px solid #0000FF;" valign="top">
+HTML should start without "-//W3C//DTD HTML 4.01//EN" ahead.<br>
+
+<!-- FTabMain START ------------------------------------------>
+<div id="ftab12" title="ftab12(no floating,scrollbars)" style="display:none;">
+
+<!-- FTabPage START -->
+<div title="Page1">
+ftab12(no floating,scrollbars)<br>
+this page can resize,but no move.
+<table><tr><td nowrap>this is Page1,this is Page1,this is Page1<br>
+</td></tr></table>
+this is Page1.<br>
+</div>
+<!-- FTabPage END -->
+<!-- FTabPage START -->
+<div title="Page2">
+this is Page2<br>
+this is Page2<br>
+</div>
+<!-- FTabPage END -->
+
+</div>
+<!-- FTabMain END ------------------------------------------>
+
+</td>
+<td style="height:100px;width:50%;border:1px solid #0000FF;" valign="top">
+
+tabpage without outer border:<br>
+<!-- FTabMain START ------------------------------------------>
+<div id="ftab11" title="ftab11(not set width&height&no title&no status)" style="display:none;">
+
+<!-- FTabPage START -->
+<div title="Page1">
+ftab11(not set width&height&no title&no status).<br>
+height is relatived to text.<br>
+style is "width:100%;height:100%;"<br>
+this is Page1 without window title.<br>
+this is Page1 without window title.<br>
+</div>
+<!-- FTabPage END -->
+<!-- FTabPage START -->
+<div title="Page2">
+ftab11<br>
+this is Page2<br>
+</div>
+<!-- FTabPage END -->
+<!-- FTabPage START -->
+<div title="Page3">
+ftab11,this is Page3<br>
+</div>
+<!-- FTabPage END -->
+
+</div>
+<!-- FTabMain END ------------------------------------------>
+
+</td></tr>
+<tr><td style="height:99%;width:50%;border:1px solid #0000FF;" valign="top">
+
+<div>
+
+<!-- FTabMain START ------------------------------------------>
+<div id="ftab10" title="ftab10(not set width but height,so no move&resize)" style="display:none;">
+
+<!-- FTabPage START -->
+<div title="Page1">
+expandAble, no move&resize<br>
+this is Page1.<br>
+</div>
+<!-- FTabPage END -->
+<!-- FTabPage START -->
+<div title="Page2">
+this is Page2<br>
+this is Page2<br>
+</div>
+<!-- FTabPage END -->
+<!-- FTabPage START -->
+<div title="Page3">
+this is Page3<br>
+this is Page3<br>
+this is Page3<br>
+</div>
+<!-- FTabPage END -->
+
+</div>
+<!-- FTabMain END ------------------------------------------>
+
+<!-- FTabMain START ------------------------------------------>
+<div id="ftab_exp1" title="ftab_exp1(expandAble,ftab_exp1 and ftab_exp2 is one group)" group="ftab_exp" style="display:none;">
+
+<!-- FTabPage START -->
+<div title="Page1">
+ftab_exp(no floating,scrollbars)<br>
+<table><tr><td nowrap>ftab_exp1 and ftab_exp2 is one group,so only one of them can expandable<br>
+</td></tr></table>
+this is Page1.<br>
+</div>
+<!-- FTabPage END -->
+
+</div>
+<!-- FTabMain END ------------------------------------------>
+
+<!-- FTabMain START ------------------------------------------>
+<div id="ftab_exp2" title="ftab_exp2(expandAble,ftab_exp1 and ftab_exp2 is one group)" group="ftab_exp" style="display:none;">
+
+<!-- FTabPage START -->
+<div title="Page1">
+ftab_exp(no floating,scrollbars)<br>
+<table><tr><td nowrap>ftab_exp1 and ftab_exp2 is one group,so only one of them can expandable<br>
+</td></tr></table>
+this is Page1.<br>
+</div>
+<!-- FTabPage END -->
+<!-- FTabPage START -->
+<div title="Page2">
+this is Page2<br>
+this is Page2<br>
+</div>
+<!-- FTabPage END -->
+
+</div>
+<!-- FTabMain END ------------------------------------------>
+
+
+</div>
+
+
+</td>
+<td style="height:99px;width:50%;border:1px solid #0000FF;" valign="top">
+
+<div style="border:2px solid #FF0000;">
+this software is from <a href="http://www.uuware.com/">http://www.uuuware.com/</a>   another file:<a href="ftab2.html">ftab2.html</a><br>
+<input type="text" maxlength="200" id="txt_url" value="http://www.google.com/">
+<input type="button" value="SetURL to ftab4" onclick="doSetURL('ftab4', 0);"><br>
+<input type="button" value="ExtStyle(green)" onclick="btnLoadCSS_G();">
+<input type="button" value="ExtStyle(red)" onclick="btnLoadCSS_R();">
+<input type="button" value="ExtStyle(blue)" onclick="btnLoadCSS_B();"><br>
+<input type="button" value="ExtStyle(big tab title)" onclick="btnLoadCSS_BT();">
+<input type="button" value="OrgStyle" onclick="btnLoadCSSOrg();"><br>
+<input type="button" value="modal Win(Lock Screen)" onclick="btnModalWin();" style="color:red;">
+</div>
+<br>
+<div id="log">This select box is here just to show you that this window script manage to cover selectboxes in IE.</div>
+<select size="1">
+    <optgroup label="Europe">
+        <option>United Kingdom aaaaaaaaa</option>
+        <option>Luxembourg</option>
+    </optgroup>    
+    <optgroup label="Asia">
+        <option>India</option>
+        <option>Dubai</option>
+    </optgroup>
+</select>
+
+</td></tr>
+</table>
+
+
+
+
+<!-- FTabMain START -->
+<div id="ftab1" title="ftab1, floating window(has tabpage inner)" style="display:none;">
+
+<!-- FTabPage START -->
+<div title="this is Page1">
+this is page1<br>
+</div>
+<!-- FTabPage END -->
+
+<!-- FTabPage START -->
+<div title="Page2">
+this is page2<br>
+</div>
+<!-- FTabPage END -->
+
+<!-- FTabPage START -->
+<div title="Page3">
+<input type="text" maxlength="25" id="ftab1_text">
+<input type="button" value="set title" onclick="set_title()"><br>
+<input type="button" value="set page title" onclick="set_title2()">
+<input type="button" value="set status" onclick="set_status()">
+<script type="text/javascript">
+function set_title(){
+  var oTmp = document.getElementById('ftab1_text');
+  var o = new FTab('ftab1');
+  o.setTitle(oTmp.value);
+}
+function set_title2(){
+  var oTmp = document.getElementById('ftab1_text');
+  var o = new FTab('ftab1');
+  var s = oTmp.value.replace(/ /g, '');
+  if(s.length<1)
+    o.setTabTitle(2,'[no title]');
+  else
+    o.setTabTitle(2,oTmp.value);
+}
+function set_status(){
+  var oTmp = document.getElementById('ftab1_text');
+  var o = new FTab('ftab1');
+  o.setStatus(oTmp.value);
+}
+</script>
+
+<br>
+has inner tab:<br>
+<!-- FTabMain START -->
+<div id="ftab6" title="ftab6, inner tabpage" style="display:none;">
+
+<!-- FTabPage START -->
+<div title="Page1">
+this is page1<br>
+</div>
+<!-- FTabPage END -->
+
+<!-- FTabPage START -->
+<div title="Page2">
+this is page2<br>
+this is page2<br>
+</div>
+<!-- FTabPage END -->
+
+</div>
+<!-- FTabMain END -->
+
+
+</div>
+<!-- FTabPage END -->
+
+</div>
+<!-- FTabMain END -->
+
+
+<!-- FTabMain START -->
+<div id="ftab2" title="ftab2, without status" style="display:none;">
+
+<!-- FTabPage START -->
+<div title="Page1">
+page1<br>
+</div>
+<!-- FTabPage END -->
+
+</div>
+<!-- FTabMain END -->
+
+
+<!-- FTabMain START -->
+<div id="ftab3" title="this is ftab3" style="display:none;">
+
+<!-- FTabPage START -->
+<div title="Page1">
+abc<br>ftab3<br>abc<br>
+</div>
+<!-- FTabPage END -->
+
+<!-- FTabPage START -->
+<div title="Page2">
+abc<br>2222<br>abc<br>
+</div>
+<!-- FTabPage END -->
+
+<!-- FTabPage START -->
+<div title="xyz">
+abc<br>ftab3<br>abc<br>
+</div>
+<!-- FTabPage END -->
+
+</div>
+<!-- FTabMain END -->
+
+
+
+
+<!-- FTabMain START -->
+<div id="ftab4" title="ftab4, Brower(click setURL button)" style="display:none;">
+
+<!-- FTabPage START -->
+<div title="page1">
+ftab4<br>
+</div>
+<!-- FTabPage END -->
+
+</div>
+<!-- FTabMain END -->
+
+
+<!-- FTabMain START -->
+<div id="ftab4_2" title="ftab4_2, brower with tab" style="display:none;">
+
+<!-- FTabPage START -->
+<div title="Google">
+brow <a href="javascript:void(0)" onclick="doSetURL2('ftab4_2', 0, 'http://www.google.com/');">http://www.google.com/</a> in this page.<br>
+</div>
+<!-- FTabPage END -->
+
+<!-- FTabPage START -->
+<div title="Google2">
+brow <a href="javascript:void(0)" onclick="doSetURL2('ftab4_2', 1, 'http://www.google.com/');">http://www.google.com/</a> in this page.<br>
+</div>
+<!-- FTabPage END -->
+
+</div>
+<!-- FTabMain END -->
+
+
+<!-- FTabMain START -->
+<div id="ftab5" title="ftab5(normal window)" style="display:none;">
+
+<!-- FTabPage START -->
+<div title="Page1">
+page1<br>
+page1<br>
+</div>
+<!-- FTabPage END -->
+
+</div>
+<!-- FTabMain END -->
+
+
+<!-- FTabMain START -->
+<div id="ftab7" title="this is ftab7" style="display:none;">
+
+<!-- FTabPage START -->
+<div title="Page1">
+abc<br>ftab7<br>abc<br>
+</div>
+<!-- FTabPage END -->
+
+<!-- FTabPage START -->
+<div title="Page2">
+abc<br>2222<br>abc<br>
+</div>
+<!-- FTabPage END -->
+
+<!-- FTabPage START -->
+<div title="xyz">
+abc<br>ftab7<br>abc<br>
+</div>
+<!-- FTabPage END -->
+
+</div>
+<!-- FTabMain END -->
+
+
+<!-- FTabMain START -->
+<div id="ftabm1" title="ftabm1(modal window, no cookie, center)" style="display:none;">
+
+<!-- FTabPage START -->
+<div title="Page1">
+ftabm1<br>
+page1<br>
+<input type="button" value="Close" onclick="btnModalWin1_c();" style="color:red;">
+<input type="button" value="open another modal Win" onclick="btnModalWin2();" style="color:red;">
+<br><input type="button" value="open another modal Win" onclick="btnModalWin3();" style="color:red;">
+</div>
+<!-- FTabPage END -->
+
+</div>
+<!-- FTabMain END -->
+
+
+<!-- FTabMain START -->
+<div id="ftabm2" title="ftabm2(modal up modal, no cookie, center)" style="display:none;">
+
+<!-- FTabPage START -->
+<div title="Page1">
+ftabm2<br>
+page1<br>
+<input type="button" value="Close" onclick="btnModalWin2_c();" style="color:red;">
+</div>
+<!-- FTabPage END -->
+
+</div>
+<!-- FTabMain END -->
+
+
+
+<!-- FTabMain START -->
+<div id="ftabm3" title="ftabm3(keep center)" style="display:none;">
+
+<!-- FTabPage START -->
+<div title="Page1" style="border:8px solid orange;">
+ftabm3<br>
+to change the size of window to see the effect.<br>
+<input type="button" value="Close" onclick="btnModalWin3_c();" style="color:red;">
+</div>
+<!-- FTabPage END -->
+
+</div>
+<!-- FTabMain END -->
+
+
+<script type="text/javascript">
+//load style file
+function loadCSS(cssUrl)
+{
+  var oTmp = document.getElementsByTagName('head');
+  if(!oTmp) oTmp = document.getElementsByTagName('body');
+  if(oTmp && oTmp[0]){
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = cssUrl;
+    oTmp[0].appendChild(link);
+  }
+  else document.write('<link rel="stylesheet" href="'+cssUrl+'">');
+}
+function btnLoadCSS_G()
+{
+  loadCSS(FTab_PATH+'ftab_green.css');
+}
+function btnLoadCSS_R()
+{
+  loadCSS(FTab_PATH+'ftab_red.css');
+}
+function btnLoadCSS_B()
+{
+  loadCSS(FTab_PATH+'ftab_blue.css');
+}
+function btnLoadCSS_BT()
+{
+  loadCSS(FTab_PATH+'ftab_bigtabtitle.css');
+}
+function btnLoadCSSOrg()
+{
+  loadCSS(FTab_PATH+'ftab.css');
+}
+
+FTabs.OnPageShow = function(ftab,index)
+{
+  window.status='FTab_OnPageShow,window:'+ftab.id + ', index:' + index + ' is shown.';
+}
+FTabs.OnActing = function(ftab)
+{
+  window.status='FTab_OnActing,window:'+ftab.id + '.';
+}
+FTabs.OnDeActing = function(ftab)
+{
+  window.status='FTab_OnDeActing,window:'+ftab.id + '.';
+}
+FTabs.OnMinMax = function(ftab, isMin)
+{
+  window.status='FTab_OnMinMax,window:'+ftab.id + ', isMin:' + isMin;
+}
+FTabs.OnHide = function(ftab)
+{
+  window.status='FTab_OnHide,window:'+ftab.id + '.';
+}
+function doSetURL(id,index)
+{
+  var oTmp = document.getElementById('txt_url');
+  FTab(id).setURL(index,oTmp.value);
+}
+function doSetURL2(id,index,url)
+{
+  FTab(id).setURL(index,url);
+}
+
+var o_ftabm1;
+var o_ftabm2;
+var o_ftabm3;
+function btnModalWin()
+{
+  o_ftabm1 = FTab('ftabm1',false,false,300,160,'modal:1;tab:0;cookie:0;center:1;');
+  o_ftabm1.show();
+}
+function btnModalWin2()
+{
+  o_ftabm2 = FTab('ftabm2',false,false,200,120,'modal:1;tab:0;cookie:0;center:1;');
+  o_ftabm2.show();
+}
+function btnModalWin1_c()
+{
+  o_ftabm1.hide();
+}
+function btnModalWin2_c()
+{
+  o_ftabm2.hide();
+}
+function btnModalWin3()
+{
+  o_ftabm3 = FTab('ftabm3',false,false,400,320,'modal:1;title:0;status:0;tab:0;cookie:0;center:1;keepcenter:1;');
+  o_ftabm3.show();
+}
+function btnModalWin3_c()
+{
+  o_ftabm3.hide();
+}
+
+//function FTab(tabID, left, top, width, height, style, showPageIndex)
+//style = 'title:1;minmax:1;close:1;move:0;status:1;resize:1;scroll:1;tab:1;tabrect:1;cookie:1;modal:0;center:0;';
+//FTab('ftab10',false,false,'100%','100%','move:0;resize:0;');
+FTab('ftab11',false,false,'100%',100,'title:0;status:0;tabrect:0;');
+FTab('ftab12',false,false,200,100,'title:0;move:0;');
+//expandable
+FTab('ftab10',false,false,400,'','expandable:1;');
+FTab('ftab_exp1',false,false,400,'','tab:0;expandable:1;initmin:1;');
+FTab('ftab_exp2',false,false,400,'','expandable:1;initmin:0;');
+
+var o = FTab('ftab1',10,180,10,10,'scroll:1;');
+o.show(2);
+//o.setTitle('show page3&set title after created');
+o.setTabTitle(0,'changed after created');
+o.setStatus('set status after created.');
+//o.move(5,250);
+o.move(false,false,300,160);
+//inner ftab6,must after ftab1
+FTab('ftab6',false,false,200,50,'title:0;status:0;tabrect:0;');
+
+FTab('ftab2',310,70,160,60,'tab:0;status:0;close:0;');
+FTab('ftab3',330,90,160,90,'resize:0;');
+FTab('ftab4_2',400,280,250,150,'tab:1;minmax:1;close:0;scroll:0;');
+FTab('ftab4',560,340,150,100,'tab:0;minmax:0;close:0;scroll:0;fixed:0;');
+FTab('ftab5',500,90,200,60,'tab:0;status:1;');
+
+var t7 = FTab('ftab7',630,400,200,120,'scroll:0;');
+t7.setStatus('<input type="button" value="OK" onclick="alert(\'OK\');"><input type="button" value="Cancel" onclick="alert(\'Cancel\');">  put some buttons at status bar.');
+</script>
+
+</BODY>
+</HTML>

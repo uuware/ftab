@@ -1,0 +1,61 @@
+/*******************************************************************************
+	ExtStyle of FTab(Floating Tabs)
+	Copyright (c) 2006-2008 uuware.com. All rights reserved.
+	Developed by project@uuware.com, Visit http://www.uuware.com/ for details.
+	(see info in ftab.js)
+	
+	ExtStyle:
+	for custom to modify.
+*******************************************************************************/
+.ftab_main{
+	background-color:#FFF;
+	border:1px solid #EB9797;
+}
+.ftab_title{
+	border-top:1px solid #FBA7A7;
+	border-right:1px solid #FBA7A7;
+	border-left:1px solid #DB8787;
+	border-bottom:1px solid #DB8787;
+	color:#FFFFFF;
+	background-color:#FDC7C7;
+}
+.ftab_title span{
+	color:#777777;
+}
+.ftab_title_act{
+	background-color:#FDC7C7;
+}
+.ftab_title_act span{
+	color:#FF3030;
+}
+
+.ftab_tab{
+	border-bottom:3px double #EB9797;
+	background-color:#FFFFFF;
+}
+.ftab_act{
+	color:#FF5050;
+}
+.ftab_deact{
+	color:#777777;
+}
+
+.ftab_status{
+	border-top:3px double #EB9797;
+	background-color:#FDDFDF;
+}
+
+/* for no rect tab */
+.ftab_main_norect{
+	border:0px;
+}
+.ftab_tab_norect{
+	border-bottom:1px solid #EB9797;
+	background-color:#FFFFFF;
+}
+.ftab_body_norect{
+	border-top:0px;
+	border-right:1px solid #EB9797;
+	border-left:1px solid #EB9797;
+	border-bottom:1px solid #EB9797;
+}

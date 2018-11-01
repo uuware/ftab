@@ -1,0 +1,150 @@
+/*******************************************************************************
+	style of FTab(Floating Tabs)
+	Copyright (c) 2006-2008 uuware.com. All rights reserved.
+	Developed by project@uuware.com, Visit http://www.uuware.com/ for details.
+	(see info in ftab.js)
+*******************************************************************************/
+/*padding: top right bottom left;*/
+.ftab_main_parent{
+	padding:0px;
+}
+.ftab_main_ext{
+	border-bottom:4px solid #fff;
+}
+.ftab_main{
+	background-color:#FFF;
+	border:1px solid #317082;
+}
+.ftab_body{
+	margin:0px;
+	padding:0px;
+}
+.ftab_bodysub{
+	margin:0px;
+	padding:1px 3px 1px 3px;
+}
+
+.ftab_title{
+	border-top:2px solid #418092;
+	border-right:2px solid #418092;
+	border-left:2px solid #216072;
+	border-bottom:1px solid #115062;
+	color:#FFFFFF;
+	background-color:#317082;
+	font-size:11px;
+	white-space:nowrap;
+	text-align:right;
+	overflow:hidden;
+	padding:0px 1px 0px 3px;
+}
+.ftab_title img{
+	border:0px;
+}
+.ftab_title span{
+	float:left;
+	text-align:left;
+	color:#DDDDDD;
+}
+.ftab_title,.ftab_titleh{
+	/*height:11px;*/
+}
+.ftab_title_act{
+}
+.ftab_title_act span{
+	color:#FFFFFF;
+}
+
+.ftab_tbar{
+	background-color:#E2EBED;
+	overflow:hidden;
+	font-size:12px;
+	white-space:nowrap;
+	vertical-align:top;
+	border:0;
+}
+
+.ftab_tab{
+	border-bottom:3px double #317082;
+	background-color:#E2EBED;
+	overflow:hidden;
+	font-weight:bold;
+	font-size:12px;
+	white-space:nowrap;
+	vertical-align:bottom;
+}
+.ftab_tab,.ftab_tabh{
+	height:14px;
+}
+.ftab_tab img{
+	border:0px;
+}
+
+.ftab_act,.ftab_actr,.ftab_deact,.ftab_deactr{
+	cursor:pointer;
+}
+.ftab_act{
+	padding:3px 0px 0px 6px;
+	background:url(ftab_actl.gif) left top no-repeat;
+	color:#000000;
+}
+.ftab_actr{
+	padding:3px 0px 0px 0px;
+	background:url(ftab_actl.gif) right top no-repeat;
+}
+.ftab_deact{
+	padding:4px 0px 0px 6px;
+	background:url(ftab_deactl.gif) left top no-repeat;
+	color:#777777;
+}
+.ftab_deactr{
+	padding:4px 0px 0px 0px;
+	background:url(ftab_deactl.gif) right top no-repeat;
+}
+
+.ftab_status{
+	padding:0px 1px 0px 1px;
+	border-top:3px double #317082;
+	background-color:#E2EBED;
+	clear:both;
+	font-size:11px;
+	text-align:right;
+	cursor:default;
+	overflow:hidden;
+	white-space:nowrap;
+}
+.ftab_status span{
+	font-size:10px;
+	margin:0px;
+	padding:0px;
+	float:left;
+	text-align:left;
+}
+.ftab_status input{
+	margin:0px;
+	padding:0px;
+	font-size:10px;
+}
+.ftab_status,.ftab_statush{
+	height:12px;vertical-align:bottom;
+}
+
+/* for no rect tab */
+.ftab_main_norect{
+	border:0px;
+}
+.ftab_tab_norect{
+	border-bottom:1px solid #317082;
+	background-color:#FFFFFF;
+}
+.ftab_body_norect{
+	border-top:0px;
+	border-right:1px solid #317082;
+	border-left:1px solid #317082;
+	border-bottom:1px solid #317082;
+}
+
+/* for no rect tab */
+.ftab_button{
+	background: transparent;
+	border:0px;margin:0px;padding:0px;
+}
